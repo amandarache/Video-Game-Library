@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Verdana';
+    color: #3a3a3b;
+}
+
+section {
+    padding: 16px;
+}
+
+.gameTilesContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14px;
+    overflow-x: auto;
+}
+
+/* SHARED */
+.centerAlign {
+    display: flex;
+    align-items: center;
+}
+
+.noPadding {
+    padding: none;
+}
+
+.smallIcon {
+    height: 14px;
+}
+
+.mediumIcon {
+    height: 26px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    color: #918e9b;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #eeedf0;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d6d4d9;
+    border-radius: 20px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 20px 36px;
+    box-shadow: 0px 1px 8px darkgrey;
+}
+
+.navIcon {
+    margin-right: 8px;
+}
+
+.purpleTheme {
+    margin-left: auto;
+    border:  2px solid #5f46a3;
+    border-radius: 4px;
+    background-color: #a07dd4;
+    color: white;
+    padding: 6px 26px;
+    font-weight: 600;
+}
+
+.purpleTheme:hover {
+    background-color: #6e5bb0;
+    cursor: pointer;
+}
+
+
+/* LANDING */
+.landing {
+    display: flex;
+    flex-direction: column;
+}
+
+.landingImg {
+    width: 100%;
+    align-self: center;
+}
+
+/* GAME TILE */
+.gameImgContainer {
+    width: 100%;
+    height: 60%;
+    background: black;
+    margin-bottom: 9px;
+    border-radius: 5px;
+}
+
+.gameImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.gameImg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.gameTitle {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.gamePrice {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.tile {
+    width: 186px;
+    font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tileBadge {
+    position: absolute;
+    top: 6px;
+    left: 120px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    border: 1.5px solid #de142c;
+    font-weight: bold;
+}
+
+/* FEEDBACK */
+.feedbackInput {
+    font-family: 'Verdana';
+    font-size: 14px;
+    color: #3a3a3b;
+    border:  2px solid #d6d4d9;
+    border-radius: 6px;
+    resize: none;
+    outline-color: #5f46a3;
+    width: 50%;
+    height: 120px;
+    padding: 6px;
+}
+
+.feedbackSubmit {
+    border:  2px solid #5f46a3;
+    border-radius: 4px;
+    background-color: #a07dd4;
+    color: white;
+    margin-top: 12px;
+    padding: 6px 26px;
+    font-weight: 600;
+}
+
+.feedbackSubmit:hover {
+    background-color: #6e5bb0;
+    cursor: pointer;
+}
